@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button  type="button" onclick="clikc()">Click me!</button>
+<p id="demo"></p>
+<script>
+    function clikc(){
+        //khai bao
+
+        var text;
+        var a = +prompt('a','');
+
+        //lệnh switch case
+
+        switch (a){
+            case 0:
+                text = "đây là số 0";
+                break;
+            case 1:
+                text = "đây là số 1";
+                break;
+            case 2 :
+            case 3 :
+                text = "đây là số 2 và 3";
+                break;
+
+        }
+        document.getElementById("demo").innerHTML = text;
+    }
+
+
+
+</script>
+</body>
+</html>
